@@ -74,3 +74,23 @@ SELECT title, show_time FROM movies WHERE title = 'Guardians of the Galaxy';
 UPDATE movies SET show_time = '16:25' WHERE title = 'Guardians of the Galaxy 2';
 
 SELECT title, show_time FROM movies WHERE title IN('Guardians of the Galaxy', 'Guardians of the Galaxy 2');
+
+DELETE FROM movies WHERE title IN ('Black Panther', 'Avengers Assemble');
+
+SELECT * FROM movies;
+
+DELETE FROM movies WHERE title LIKE 'Guardians%';
+
+SELECT * FROM movies;
+
+DELETE FROM movies WHERE title LIKE 'Iron Man _';
+
+SELECT * FROM movies;
+
+DELETE FROM movies WHERE title LIKE 'Th___%';
+
+SELECT * FROM movies;
+
+DELETE FROM movies WHERE title LIKE '%America%';
+
+SELECT * FROM movies;
